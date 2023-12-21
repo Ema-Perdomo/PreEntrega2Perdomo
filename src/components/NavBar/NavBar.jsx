@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from '../CartWidget/CartWidget'
 import logo from '../../assets/Logo_Barbell.svg'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 function NavBar() {
@@ -17,14 +17,13 @@ function NavBar() {
           <Nav className="me-auto">
 
             <Link to='/' className='Pestaña'>Home</Link>
-            <Link to='/gym' className='Pestaña'>Gym</Link>
-            <Link to='/deportes' className='Pestaña'>deportes</Link>
-            <Link to='/indumentaria' className='Pestaña'>Indumentaria</Link>
+            <Link to='/category/Gym' className='Pestaña'>Gym</Link>
+            <Link to='/category/Deportes' className='Pestaña'>deportes</Link>
+            <Link to='/category/Indumentaria' className='Pestaña'>Indumentaria</Link>
             
-            
-            <Link className="NavBarItems" to="../cart/cart.jsx"> <CartWidget /> </Link>
           </Nav>
-          <link  href="cart" />
+          <Link className="NavBarItems" to="../cart/cart.jsx"> <CartWidget /> </Link>
+          
         </Container>
       </Navbar>
     </>
