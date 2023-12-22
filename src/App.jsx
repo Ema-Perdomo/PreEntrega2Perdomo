@@ -21,14 +21,15 @@ function App() {
         <NavBar/>
 
         <Routes>
+
           <Route path={'/'} element={ <ItemListContainer greeting='Insumos deportivos'/> } />
-          <Route path={'/categoria/:id'} element={ <ItemListContainer  />} />
-          <Route path={'/item/:id'} element={ <ItemListContainer /> } />
-          <Route path={'/cart'} element={ <CartWidget /> } />
-          
+          <Route path="/categoria/:id" element={ <ItemListContainer  />} />
+          <Route path="/item/:id "element={ <ItemListContainer /> } />
+          <Route path={'/cart'} element={ <CartWidget /> } />          
           <Route path={'*'} element={ <error /> }></Route>  
-          
+
         </Routes>
+
       </BrowserRouter>    
     </div>
   );

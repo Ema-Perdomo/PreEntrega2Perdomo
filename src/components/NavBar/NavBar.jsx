@@ -22,7 +22,7 @@ function NavBar() {
             <Link to="/categoria/Indumentaria" className='Pestaña'>Indumentaria</Link>
             
           </Nav>
-          <Link to="../cart/cart" className="NavBarItems" > <CartWidget /> </Link>
+          <Link to="/cart" className="NavBarItems" > <CartWidget /> </Link>
           
         </Container>
       </Navbar>
