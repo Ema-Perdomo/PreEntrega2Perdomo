@@ -4,7 +4,7 @@ const CartWidget = () => {
   return (
     <div>
       <i><TbGardenCart /></i>
-      <div class="qty-display">0</div>
+      <div className="qty-display">0</div>
     </div>
   )
 }

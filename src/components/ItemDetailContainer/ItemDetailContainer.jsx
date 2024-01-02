@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import arrayProductos from '../Json/arrayProductos.json'
+import ItemDetail from '../ItemDetail/ItemDetail'
 
 const ItemDetailContainer = () => {
 
@@ -12,7 +13,7 @@ const ItemDetailContainer = () => {
         const promesa = new Promise((resolve)=>{
             setTimeout(()=>{
                 resolve(arrayProductos.find(item=>item.id === parseInt(id))) //Si es txt lo pasa a int
-            }, 2000)
+            }, 1500)
         });
         promesa.then((data)=>{
             setItem(data)
